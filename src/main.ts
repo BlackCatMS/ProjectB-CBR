@@ -1,0 +1,23 @@
+import { createApp } from 'vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import App from './App.vue';
+import Home from '@/views/Home.vue';
+import FourOFour from '@/views/FourOFour.vue';
+
+import "@/assets/main.scss";
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes: [
+    { name: '', path: '/', component: Home },
+    { name: 'Pagina niet gevonden', path: '/:pathMath(.*)*', component: FourOFour },
+  ]
+});
+
+router.afterEach((to) => {
+  document.title = to.name ? 'CBR - ' + to.name.toString() : 'CBR';
+})
+
+const app = createApp(App);
+app.use(router);
+app.mount('#app');
