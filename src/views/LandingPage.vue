@@ -43,7 +43,6 @@
 </template>
 
 <style scoped lang="scss">
-
     .landing-page-container {
         display: flex;
         flex-direction: column;
