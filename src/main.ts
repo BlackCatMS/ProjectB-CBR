@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import App from './App.vue';
-import Home from '@/views/Home.vue';
+import LandingPage from '@/views/LandingPage.vue'
 import FourOFour from '@/views/FourOFour.vue';
 
 import "@/assets/main.scss";
@@ -9,7 +9,7 @@ import "@/assets/main.scss";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { name: '', path: '/', component: Home },
+    { name: 'Home', path: '/', component: LandingPage},
     { name: 'Pagina niet gevonden', path: '/:pathMath(.*)*', component: FourOFour },
   ]
 });
