@@ -8,6 +8,7 @@ const textInput = '';
 <template>
   <main>
     <CustomTextInput name="test" v-model="textInput" placeholder="test">Test</CustomTextInput><br>
+    <CustomButton>Verzenden</CustomButton>
   </main>
 </template>
 
