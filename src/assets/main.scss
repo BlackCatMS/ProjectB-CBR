@@ -10,16 +10,6 @@
     src: url(fonts/ScalaSansPro-Bold.otf) format('opentype');
   }
 
-  color-scheme: light dark;
-  color: #1B1C1E;
-  background-color: #ffffff;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
   // primary colors
   --color-blue-main: #0588F0;
   --color-orange-main: #FF8200;
@@ -61,6 +51,7 @@ html, body {
 body {
   font-family: Scala Sans Pro;
   line-height: 1.5;
+  color: var(--color-black);
   -webkit-font-smoothing: antialiased;
 }
 /*
