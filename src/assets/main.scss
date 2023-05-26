@@ -1,17 +1,14 @@
 :root {
   @font-face {
-    font-family: 'Scala Sans Pro Regular';
+    font-family: 'Scala Sans Pro';
     src: url(fonts/ScalaSansPro-Regular.otf) format('opentype');
   }
 
   @font-face {
-    font-family: 'Scala Sans Pro Bold';
+    font-family: 'Scala Sans Pro';
     font-weight: bold;
     src: url(fonts/ScalaSansPro-Bold.otf) format('opentype');
   }
-
-  line-height: 1.5;
-  font-weight: 400;
 
   color-scheme: light dark;
   color: #1B1C1E;
@@ -62,6 +59,7 @@ html, body {
   5. Improve text rendering
 */
 body {
+  font-family: Scala Sans Pro;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
