@@ -1,5 +1,15 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  @font-face {
+    font-family: 'Scala Sans Pro Regular';
+    src: url(fonts/ScalaSansPro-Regular.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Scala Sans Pro Bold';
+    font-weight: bold;
+    src: url(fonts/ScalaSansPro-Bold.otf) format('opentype');
+  }
+
   line-height: 1.5;
   font-weight: 400;
 
