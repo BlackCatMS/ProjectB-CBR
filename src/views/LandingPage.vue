@@ -39,32 +39,47 @@
         </div>
 
     </div>
-    
+
 </template>
 
 <style scoped lang="scss">
     .landing-page-container {
+        height: 80%;
         display: flex;
         flex-direction: column;
         
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         text-align: center;
+
+        gap: 5rem;
+
+        padding: 2.5rem;
     }
 
     .alternatives-container {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+
+        background-color: var(--color-blue-main);
+        border-radius: var(--border-radius-value);
+        padding: 1rem;
+    }
+
+    .alternatives-text {
+        width: 500px;
+
+        color: white;
     }
 
     .alternatives-text p {
         padding: 0.25rem;
-        text-align: left;
-        width: 400px;
+        text-align: center;
     }
 
-    .faq-container {
+    .faq-container h2 {
+        color: var(--color-blue-secondary);
     }
 
     
