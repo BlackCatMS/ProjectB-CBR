@@ -71,7 +71,7 @@
         align-items: center;
         text-align: center;
 
-        gap: 7.5rem;
+        gap: 2.5rem;
 
         padding: 2.5rem;
     }
