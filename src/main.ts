@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import App from './App.vue';
 import Home from '@/views/Home.vue';
+import InputTest from '@/views/InputTest.vue';
 import FourOFour from '@/views/FourOFour.vue';
 
 import "@/assets/main.scss";
@@ -10,6 +11,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { name: '', path: '/', component: Home },
+    { name: 'input test', path: '/inputs', component: InputTest },
     { name: 'Pagina niet gevonden', path: '/:pathMath(.*)*', component: FourOFour },
   ]
 });
