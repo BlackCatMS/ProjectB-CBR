@@ -4,8 +4,6 @@
 
 <template>
 
-    <nav></nav>
-
     <div class="landing-page-container">
 
         <div class="alternatives-container">
@@ -44,22 +42,9 @@
 
     </div>
 
-    <footer></footer>
-
 </template>
 
 <style scoped lang="scss">
-
-
-    // BEGIN TEST FOOTER/NAV
-
-    nav, footer {
-        background-color: var(--color-blue-main);
-        height: 80px;
-    }
-
-    // END TEST FOOTER/NAV
-
 
     .landing-page-container {
         height: 78.4vh;
