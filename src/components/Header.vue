@@ -6,13 +6,13 @@ import "bootstrap/dist/js/bootstrap.min.js";
   <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <img src="../assets/thumbnail_logo + samen vooruit-outline_RGB_zonder-payoff-01.png" class="logo img-fluid">
+      <img src="../assets/CBR samen vooruit RGB.png" class="logo img-fluid">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
@@ -34,12 +34,22 @@ import "bootstrap/dist/js/bootstrap.min.js";
 <style>
 .navbar.navbar-expand-lg{
   height: 95px;
-  background-color: #0588F0;
+  background-color: #ffffff;
 }
 .logo.img-fluid{
-  width: 50px;
+  width: 170px;
 }
 .nav-item .nav-link{
-  color: #333F48;
+  color: #003DA5;
+  font-weight: bolder;
+}
+.navbar-nav > li{
+  margin-left:30px;
+  margin-right:30px;
+}
+@media only screen and (max-width: 768px) {
+  .navbar.navbar-expand-lg .container{
+    background-color: #0588F0;
+  }
 }
 </style>
