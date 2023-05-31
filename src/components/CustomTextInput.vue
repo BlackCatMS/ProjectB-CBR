@@ -13,11 +13,11 @@ defineEmits(['update:modelValue']);
 <template>
   <div class="input-container" :class="{ errored }">
     <input
-    :name="name"
-    :type="type ?? 'text'"
-    :value="modelValue"
-    @input="$emit('update:modelValue', modelValue)"
-    v-bind="$attrs"
+      :name="name"
+      :type="type ?? 'text'"
+      :value="modelValue"
+      @input="$emit('update:modelValue', modelValue)"
+      v-bind="$attrs"
     />
     <label :for="name"><slot /></label>
   </div>
