@@ -1,13 +1,11 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <div>
-
-  </div>
+    <div class="footer container-fluid text-center p-5 fixed-bottom">
+    <p>Footer</p>
+</div>
 </template>
-
-<style scoped lang="scss">
-
+<style>
+.footer{
+    height: 80px;
+    background-color: red;
+}
 </style>
