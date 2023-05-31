@@ -6,6 +6,7 @@
 <style>
 .footer{
     height: 80px;
-    background-color: red;
+    background-color: #0588F0;
+    position: static;
 }
 </style>
