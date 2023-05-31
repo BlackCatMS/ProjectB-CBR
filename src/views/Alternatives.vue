@@ -14,7 +14,7 @@
             <li>
 
                 <div class="item-container">
-                    <img src="../assets/CBR logo RGB.png" alt="CBR Logo">
+                    <img src="@/assets/CBR logo RGB.png" alt="CBR Logo">
 
                     <h2>Titel van alternatief vervoer</h2>
 
