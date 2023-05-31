@@ -55,10 +55,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#app > *:not(nav, div) {
-  min-height: 100vh;
+body {
   display: grid;
   place-items: center;
+}
+
+#app > *:not(nav, div) {
+  min-height: 100vh;
 }
 /*
   6. Improve media defaults
