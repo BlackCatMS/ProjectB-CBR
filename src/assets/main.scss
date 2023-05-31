@@ -54,6 +54,12 @@ body {
   color: var(--color-black);
   -webkit-font-smoothing: antialiased;
 }
+
+#app > *:not(nav, div) {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
 /*
   6. Improve media defaults
 */
