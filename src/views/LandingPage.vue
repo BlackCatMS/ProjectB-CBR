@@ -14,7 +14,7 @@
 
                 <p>
                     Als u zelf niet meer mag rijden kunt u hier bekijken wat nog wel 
-                    mogelijk is om ergens te komen. 
+                    mogelijk is om ergens te komen.
                     Bedenk wat voor u werkt en overleg 
                     indien nodig met uw arts of iemand uit uw omgeving.
                 </p>
@@ -27,24 +27,28 @@
 
         </div>
 
-
         <div class="faq-container">
 
             <h2>Hulp nodig?</h2>
 
             <p>Vul dan de enquête in voor een gerichter advies</p>
 
-            <button>Vul in</button>
+            <RouterLink to="/faq">
+                <button>Vul in</button>
+            </RouterLink>
 
         </div>
+
 
     </div>
 
 </template>
 
 <style scoped lang="scss">
+
     .landing-page-container {
-        height: 80%;
+        height: 78.4vh;
+
         display: flex;
         flex-direction: column;
         
@@ -52,7 +56,7 @@
         align-items: center;
         text-align: center;
 
-        gap: 5rem;
+        gap: 2.5rem;
 
         padding: 2.5rem;
     }
@@ -60,26 +64,40 @@
     .alternatives-container {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
 
-        background-color: var(--color-blue-main);
-        border-radius: var(--border-radius-value);
         padding: 1rem;
     }
 
     .alternatives-text {
-        width: 500px;
+        display: grid;
+        place-items: center;
+    }
 
-        color: white;
+    .alternatives-text h1 {
+        font-size: 40px;
+        color: var(--color-blue-secondary);
     }
 
     .alternatives-text p {
-        padding: 0.25rem;
+        width: 50%;
+        font-size: 18px;
+        padding: 1rem;
         text-align: center;
     }
 
-    .faq-container h2 {
-        color: var(--color-blue-secondary);
+    .faq-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        background-color: var(--color-orange-main);
+        border-radius: var(--border-radius-value);
+        color: white;
+
+        padding: 1rem;
     }
 
     
