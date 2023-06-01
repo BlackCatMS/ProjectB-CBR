@@ -1,4 +1,4 @@
-<script>
+<script setup lang="ts">
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 </script>
