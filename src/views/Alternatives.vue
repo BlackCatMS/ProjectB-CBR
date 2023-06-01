@@ -13,7 +13,7 @@
 
                 <div class="infocard-container" id="Fiets-card">
                     <div class="infocard-body" >
-                        <img src="@/assets/icons/Fiets.png"/>
+                        <img src="/public/assets/icons/Fiets.png"/>
                         <H2>Fietsen</H2>
                         <h3>Als u moeite heeft met fietsen vanwege een lichamelijke beperking, kunt u overwegen om een aangepaste fiets te gebruiken, 
                             In sommige gevallen kunt u hier een vergoeding voor krijgen van UWV of uw gemeente
@@ -31,7 +31,7 @@
 
                 <div class="infocard-container" id="Bromfiets-card">
                     <div class="infocard-body">
-                        <img src="@/assets/icons/Bromfiets.png"/>
+                        <img src="/public/assets/icons/Bromfiets.png"/>
                         <H2>Bromfiets</H2>
                         <h3>Als u om medische redenen geen auto meer mag rijden, kunt u nog wel een bromfietsrijbewijs (categorie AM) aanvragen bij de gemeente.
                         </h3>
@@ -48,7 +48,7 @@
 
                 <div class="infocard-container" id="Scootmobiel-card">
                     <div class="infocard-body">
-                        <img src="@/assets/icons/Scootmobiel.png"/>
+                        <img src="/public/assets/icons/Scootmobiel.png"/>
                         <H2>Scootmobiel</H2>
                         <h3>Met een scootmobiel kunt u zelfstandig op pad gaan. U heeft hiervoor geen rijbewijs nodig.
                         </h3>
@@ -65,7 +65,7 @@
 
                 <div class="infocard-container" id="Ov-card">
                     <div class="infocard-body">
-                        <img src="@/assets/icons/Bus.png"/>
+                        <img src="/public/assets/icons/Bus.png"/>
                         <H2>Openbaar vervoer</H2>
                         <h3>Met het openbaar vervoer kunt u naar uw bestemming reizen met de trein, bus, tram of metro.
                         </h3>
@@ -82,7 +82,7 @@
 
                 <div class="infocard-container" id="Meerijden-card">
                     <div class="infocard-body">
-                        <img src="@/assets/icons/Auto.png"/>
+                        <img src="/public/assets/icons/Auto.png"/>
                         <H2>Meerijden</H2>
                         <h3>Als u niet meer zelf mag rijden, is meerijden met iemand anders een logische optie.
                         </h3>
@@ -98,7 +98,7 @@
 
                 <div class="infocard-container" id="Taxi-card">
                     <div class="infocard-body">
-                        <img src="@/assets/icons/Taxi.png"/>
+                        <img src="/public/assets/icons/Taxi.png"/>
                         <H2>Taxi</H2>
                         <h3>Er zijn verschillende soorten taxi's beschikbaar. Voor korte afstanden zijn er lokale of regionale vervoerssystemen en betaalbare alternatieven.
                         </h3>
