@@ -52,7 +52,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 }
 @media only screen and (max-width: 768px) {
   .navbar.navbar-expand-lg .container{
-    background-color: #0588F0;
+    background-color: #ffffff;
   }
 }
 </style>
