@@ -78,6 +78,7 @@
 </template>
 
 <style scoped lang="scss">
+
 .content-container {
     width: 100%;
     height: 100%;
