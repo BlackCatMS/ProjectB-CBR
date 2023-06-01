@@ -5,8 +5,8 @@
         "description": "Er is geen rijbewijs nodig om te fietsen, dus u mag nog steeds fietsen. Als u moeite heeft met fietsen vanwege een lichamelijke beperking, kunt u overwegen om een aangepaste fiets te gebruiken, zoals een driewielfiets, een loopfiets, een handbike, een tandem of een elektrische fiets. In sommige gevallen kunt u hier een vergoeding voor krijgen van UWV of uw gemeente.",
         "references": [
             {
-            "label": "Meer over de vergoeding",
-            "link": "https://www.regelhulp.nl/onderwerpen/vervoer-en-beperking/aangepast-fietsen"
+                "label": "Meer over de vergoeding",
+                "link": "https://www.regelhulp.nl/onderwerpen/vervoer-en-beperking/aangepast-fietsen"
             }
         ]
     },
@@ -22,8 +22,8 @@
         "description": "Met een scootmobiel kunt u zelfstandig op pad gaan. U heeft hiervoor geen rijbewijs nodig. Er zijn ook gesloten gehandicaptenvoertuigen beschikbaar. Zelfs als u geen handicap heeft, mag u met een gehandicaptenvoertuig rijden. Bekijk de regels van de Rijksoverheid voor meer informatie.",
         "references": [
             {
-            "label": "Bekijk de regels van de Rijksoverheid",
-            "link": "https://www.rijksoverheid.nl/onderwerpen/voertuigen-op-de-weg/gehandicaptenvoertuig"
+                "label": "Bekijk de regels van de Rijksoverheid",
+                "link": "https://www.rijksoverheid.nl/onderwerpen/voertuigen-op-de-weg/gehandicaptenvoertuig"
             }
         ]
     },
@@ -33,8 +33,8 @@
         "description": "Met het openbaar vervoer kunt u naar uw bestemming reizen met de trein, bus, tram of metro. U kunt uw reis plannen via 9292.nl. Als u niet zelfstandig met het openbaar vervoer kunt reizen vanwege een beperking, kunt u mogelijk een OV-Begeleiderskaart aanvragen, waarmee 1 begeleider gratis met u mee kan reizen.",
         "references": [
             {
-            "label": "Informatie over de OV-begeleiderskaart",
-            "link": "https://www.rijksoverheid.nl/wetten-en-regelingen/productbeschrijvingen/ov-begeleiderskaart"
+                "label": "Informatie over de OV-begeleiderskaart",
+                "link": "https://www.rijksoverheid.nl/wetten-en-regelingen/productbeschrijvingen/ov-begeleiderskaart"
             }
         ]
     },
