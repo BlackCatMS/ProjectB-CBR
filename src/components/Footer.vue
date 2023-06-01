@@ -5,6 +5,7 @@
 </template>
 <style>
 .footer{
+    display: none;
     height: 80px;
     background-color: #0588F0;
 }

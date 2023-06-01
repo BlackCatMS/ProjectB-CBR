@@ -43,6 +43,9 @@ import "bootstrap/dist/js/bootstrap.min.js";
   color: #003DA5;
   font-weight: bolder;
 }
+.nav-item .nav-link:hover{
+  color: #FF8200;
+}
 .navbar-nav > li{
   margin-left:30px;
   margin-right:30px;
