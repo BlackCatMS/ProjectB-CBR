@@ -144,7 +144,6 @@
     }
 
     .infocard-body{
-        text-decoration: none;
         display: grid;
         grid-template-columns: 200px 200px 200px;
         grid-template-rows: 70px 180px 100px;
@@ -166,7 +165,7 @@
         text-align: center;
         vertical-align: middle;
         line-height: 100px;       
-        width: 200px;
+        width: 240px;
         height: 100px;
         border: none;
         border-radius: 20px;
@@ -174,7 +173,6 @@
     }
 
     .infocard-button button{ 
-        text-decoration: none;
         color: white;
         background-color: Transparent;
         border: none;
@@ -183,6 +181,7 @@
 
     .infocard-body H2{
         font-size: 40px;
+        margin-top: 20px;
         grid-column: 2 / 4;
         grid-row: 1 / 2;
     }
