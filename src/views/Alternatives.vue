@@ -166,7 +166,7 @@
         text-align: center;
         vertical-align: middle;
         line-height: 100px;       
-        width: 200px;
+        width: 240px;
         height: 100px;
         border: none;
         border-radius: 20px;
