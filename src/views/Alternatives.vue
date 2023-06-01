@@ -3,165 +3,207 @@
 </script>
 
 <template>
-    <div class="content-container">
 
-        <div class="title-container">
-            <h1>Alle vervoers alternatieven</h1>
+    <div class="alternatives-container">
+
+        <div class="title-text">
+            <h1 >Aternatieve vervoers middelen</h1>   
         </div>
+        <div class="alternative-infocards-container">
 
-        <ul>
+                <div class="infocard-container" id="Fiets-card">
+                    <div class="infocard-body" >
+                        <img src="@/assets/icons/Fiets.png"/>
+                        <H2>Fietsen</H2>
+                        <h3>Als u moeite heeft met fietsen vanwege een lichamelijke beperking, kunt u overwegen om een aangepaste fiets te gebruiken, 
+                            In sommige gevallen kunt u hier een vergoeding voor krijgen van UWV of uw gemeente
+                        </h3>
+                        <div class="infocard-button">
+                            <div class="button-text">
+                                <RouterLink to="/fiets">
+                                    <button>> meer over Fietsen</button>
+                                </RouterLink>
+                            </div>
+                        </div>
 
-            <li>
-
-                <div class="item-container">
-                    <img src="/public/assets/CBR-logo.png" alt="CBR Logo">
-
-                    <h2>Titel van alternatief vervoer</h2>
-
-                    <p>
-                        Korte samenvatting van wat dit vervoersmiddel eigenlijk
-                        een beetje inhoud en nog niet per se een omschrijving
-                        van wanneer je hier precies voor in aanmerking komt,
-                        zou eigenlijk ook alleen een afgekorte zin zijn :)
-                    </p>
-
-                    <a href="/alternatives">Bekijk dit alternatief</a>
-
+                    </div>
                 </div>
 
-            </li>
+                <div class="infocard-container" id="Bromfiets-card">
+                    <div class="infocard-body">
+                        <img src="@/assets/icons/Bromfiets.png"/>
+                        <H2>Bromfiets</H2>
+                        <h3>Als u om medische redenen geen auto meer mag rijden, kunt u nog wel een bromfietsrijbewijs (categorie AM) aanvragen bij de gemeente.
+                        </h3>
+                        <div class="infocard-button">
+                            <div class="button-text">
+                                <RouterLink to="/bromfiets">
+                                    <button>> meer over Bromfietsen</button>
+                                </RouterLink>
+                            </div>
+                        </div>
 
-
-            <li>
-
-                <div class="item-container">
-                    <img src="/public/assets/CBR-logo.png" alt="CBR Logo">
-
-                    <h2>Titel van alternatief vervoer</h2>
-
-                    <p>
-                        Korte samenvatting van wat dit vervoersmiddel eigenlijk
-                        een beetje inhoud en nog niet per se een omschrijving
-                        van wanneer je hier precies voor in aanmerking komt,
-                        zou eigenlijk ook alleen een afgekorte zin zijn :)
-                    </p>
-
-                    <a href="/alternatives">Bekijk dit alternatief</a>
-
+                    </div>
                 </div>
 
-            </li>
+                <div class="infocard-container" id="Scootmobiel-card">
+                    <div class="infocard-body">
+                        <img src="@/assets/icons/Scootmobiel.png"/>
+                        <H2>Scootmobiel</H2>
+                        <h3>Met een scootmobiel kunt u zelfstandig op pad gaan. U heeft hiervoor geen rijbewijs nodig.
+                        </h3>
+                        <div class="infocard-button">
+                            <div class="button-text">
+                                <RouterLink to="/scootmobiel">
+                                    <button>> meer over Scootmobielen</button>
+                                </RouterLink>
+                            </div>
+                        </div>
 
-            <li>
-
-                <div class="item-container">
-                    <img src="/public/assets/CBR-logo.png" alt="CBR Logo">
-
-                    <h2>Titel van alternatief vervoer</h2>
-
-                    <p>
-                        Korte samenvatting van wat dit vervoersmiddel eigenlijk
-                        een beetje inhoud en nog niet per se een omschrijving
-                        van wanneer je hier precies voor in aanmerking komt,
-                        zou eigenlijk ook alleen een afgekorte zin zijn :)
-                    </p>
-
-                    <a href="/alternatives">Bekijk dit alternatief</a>
-
+                    </div>
                 </div>
 
-            </li>
+                <div class="infocard-container" id="Ov-card">
+                    <div class="infocard-body">
+                        <img src="@/assets/icons/Bus.png"/>
+                        <H2>Openbaar vervoer</H2>
+                        <h3>Met het openbaar vervoer kunt u naar uw bestemming reizen met de trein, bus, tram of metro.
+                        </h3>
+                        <div class="infocard-button">
+                            <div class="button-text">
+                                <RouterLink to="/ov">
+                                    <button>> meer over OV</button>
+                                </RouterLink>
+                            </div>
+                        </div>
 
-        </ul>
+                    </div>
+                </div>
 
-    </div>
+                <div class="infocard-container" id="Meerijden-card">
+                    <div class="infocard-body">
+                        <img src="@/assets/icons/Auto.png"/>
+                        <H2>Meerijden</H2>
+                        <h3>Als u niet meer zelf mag rijden, is meerijden met iemand anders een logische optie.
+                        </h3>
+                        <div class="infocard-button">
+                            <div class="button-text">
+                                <RouterLink to="/meerijden">
+                                    <button>> meer over Meerijden</button>
+                                </RouterLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infocard-container" id="Taxi-card">
+                    <div class="infocard-body">
+                        <img src="@/assets/icons/Taxi.png"/>
+                        <H2>Taxi</H2>
+                        <h3>Er zijn verschillende soorten taxi's beschikbaar. Voor korte afstanden zijn er lokale of regionale vervoerssystemen en betaalbare alternatieven.
+                        </h3>
+                        <div class="infocard-button">
+                            <div class="button-text">
+                                <RouterLink to="/taxi">
+                                    <button>> meer over Bromfietsen</button>
+                                </RouterLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div> 
 </template>
 
 <style scoped lang="scss">
-.content-container {
-    width: 100%;
-    height: 100%;
+    .alternatives-container{
+        height: 80%;
+        width: 100%;
+            display: flex;
+            flex-direction: column;
+    }
 
-    display: grid;
-    place-items: center;
+    .title-text{
+            color: #003DA5;
+            font-size: 30px;
+            float: left;
+    }
+    .alternative-infocards-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto ;
+        grid-gap: 20px;
+    }
 
-    padding: 20px;
+  
 
-    gap: 10px;
-}
+    .infocard-container{
+        width: 600px;
+        height: 360px;
+        padding: 10px;
+    }
 
-.title-container {
-    display: grid;
-    place-items: center;
+    .infocard-body{
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 70px 180px 100px;
+        width: 600px;
+        height: 300px;
+        border: none;
+        border-radius: 20px;
+        background-color: #B9D9EB;
+    }
 
-    width: 400px;
-    height: 75px;
+    .infocard-button div{ 
+        opacity: 1;
+    }
 
-    background-color: var(--color-blue-main);
-    color: white;
+    .infocard-button{ 
+        background-color:rgba(#FF8200, 0.8);
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 100px;       
+        width: 200px;
+        height: 100px;
+        border: none;
+        border-radius: 20px;
+        color: white;
+    }
 
-    padding: 10px 20px;
-}
+    .infocard-button button{ 
+        text-decoration: none;
+        color: white;
+        background-color: Transparent;
+        border: none;
+        font-size: larger;
+    }
 
-ul {
-    margin: 0;
-    padding: 0;
+    .infocard-body H2{
+        font-size: 40px;
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+    }
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    .infocard-body h3{
+        font-size: 20px;
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        margin: 20px;
+        text-align: center;
+    }
 
-    list-style-type: none;
-}
+    .infocard-button :hover{ 
+        border-radius: 20px;
+        background-color:rgba(#FF8200, 0.8);
+        cursor:pointer;
+    }
 
-li {
-    margin: 0.5rem;
-    padding: 10px 20px;
-
-    width: 450px;
-
-    background-color: var(--color-blue-background);
-}
-
-.item-container {
-    display: flex;
-    flex-direction: column;
-
-    max-height: 450px;
-
-    gap: 0.25rem;
-}
-
-.item-container img {
-    height: 100px;
-
-    object-fit: contain;
-}
-
-.item-container h2 {
-    text-align: center;
-}
-
-.item-container p {
-    padding: 0.25rem;
-
-    max-height: 55px;
-
-    overflow: auto;
-
-}
-
-.item-container a {
-    text-align: center;
-    text-decoration: none;
-
-    font-weight: bold;
-
-    color: var(--color-blue-secondary);
-}
-
-.item-container a:hover {
-    text-decoration: underline;
-}
+    .infocard-body img{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin: 10px;
+    }
 </style>
