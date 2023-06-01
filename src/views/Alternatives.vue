@@ -116,6 +116,7 @@
 </template>
 
 <style scoped lang="scss">
+
     .alternatives-container{
         height: 80%;
         width: 100%;
