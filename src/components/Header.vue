@@ -17,10 +17,10 @@ import "bootstrap/dist/js/bootstrap.min.js";
           <router-link to="/" class="nav-link">Home</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/Alternatives" class="nav-link">Vervoers alternatieven</router-link>
+          <router-link to="/alternatives" class="nav-link">Vervoers alternatieven</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="#" class="nav-link">Enquete invullen</router-link>
+          <router-link to="/enquete" class="nav-link">Enquete invullen</router-link>
         </li>
       </ul>
       <!-- <form class="d-flex">
