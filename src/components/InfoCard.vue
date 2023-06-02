@@ -1,26 +1,27 @@
 <script setup lang="ts">
 
+defineProps<{
+  name: string,
+  image: string,
+}>();
 
 </script>
 
 <template>
     <div class="infocard">
 
-        <img src="/assets/icons/oranje/Fiets.png" alt="Fiets">
+        <img :src="image" :alt="name">
 
         <div class="infocard-text">
 
-            <h2>Fietsen</h2>
+            <h2>{{ name }}</h2>
 
-            <p>
-                Beschrijving van fietsen, hier komt een korte beschrijving te staan van wat het ongeveer inhoud.
-                ik maak de text nog even wat langer want dat is cool
-            </p>
+            <p> <slot/> </p>
 
         </div>
 
-        <RouterLink class="routerlink" to="/fietsen">
-            <button>Meer over fietsen</button>
+        <RouterLink class="routerlink" :to="name">
+            <button>Meer over {{ name }}</button>
         </RouterLink>
 
     </div>
@@ -66,6 +67,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  height: 100px;
+  overflow: hidden;
 }
 
 .routerlink {
