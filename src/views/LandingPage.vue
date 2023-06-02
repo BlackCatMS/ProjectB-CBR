@@ -47,8 +47,6 @@
 <style scoped lang="scss">
 
     .landing-page-container {
-        height: 78.4vh;
-
         display: flex;
         flex-direction: column;
         

@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import App from './App.vue';
 import LandingPage from '@/views/LandingPage.vue';
 import Alternatives from '@/views/Alternatives.vue';
+import InputTest from '@/views/InputTest.vue';
 import FourOFour from '@/views/FourOFour.vue';
 
 import "@/assets/main.scss";
@@ -10,8 +11,9 @@ import "@/assets/main.scss";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { name: 'Home', path: '/', component: LandingPage },
+    { name: '', path: '/', component: LandingPage },
     { name: 'Alternatieven', path: '/alternatives', component: Alternatives },
+    { name: 'input test', path: '/inputs', component: InputTest },
     { name: 'Pagina niet gevonden', path: '/:pathMath(.*)*', component: FourOFour },
   ]
 });

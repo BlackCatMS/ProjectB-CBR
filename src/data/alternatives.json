@@ -1,0 +1,70 @@
+[
+    {
+        "name": "Fietsen",
+        "image": "/assets/icons/Fiets.png",
+        "description": "Er is geen rijbewijs nodig om te fietsen, dus u mag nog steeds fietsen. Als u moeite heeft met fietsen vanwege een lichamelijke beperking, kunt u overwegen om een aangepaste fiets te gebruiken, zoals een driewielfiets, een loopfiets, een handbike, een tandem of een elektrische fiets. In sommige gevallen kunt u hier een vergoeding voor krijgen van UWV of uw gemeente.",
+        "references": [
+            {
+                "label": "Meer over de vergoeding",
+                "link": "https://www.regelhulp.nl/onderwerpen/vervoer-en-beperking/aangepast-fietsen"
+            }
+        ]
+    },
+    {
+        "name": "Bromfiets",
+        "image": "/assets/icons/Bromfiets.png",
+        "description": "Als u om medische redenen geen auto meer mag rijden, kunt u nog wel een bromfietsrijbewijs (categorie AM) aanvragen bij de gemeente. U mag wettelijk gezien met een bromfiets, snorfiets of brommobiel rijden, maar overleg met uw arts of dit voor u veilig is.",
+        "references": []
+    },
+    {
+        "name": "Scootmobiel",
+        "image": "/assets/icons/Scootmobiel.png",
+        "description": "Met een scootmobiel kunt u zelfstandig op pad gaan. U heeft hiervoor geen rijbewijs nodig. Er zijn ook gesloten gehandicaptenvoertuigen beschikbaar. Zelfs als u geen handicap heeft, mag u met een gehandicaptenvoertuig rijden. Bekijk de regels van de Rijksoverheid voor meer informatie.",
+        "references": [
+            {
+                "label": "Bekijk de regels van de Rijksoverheid",
+                "link": "https://www.rijksoverheid.nl/onderwerpen/voertuigen-op-de-weg/gehandicaptenvoertuig"
+            }
+        ]
+    },
+    {
+        "name": "Openbaar vervoer",
+        "image": "/assets/icons/Bus.png",
+        "description": "Met het openbaar vervoer kunt u naar uw bestemming reizen met de trein, bus, tram of metro. U kunt uw reis plannen via 9292.nl. Als u niet zelfstandig met het openbaar vervoer kunt reizen vanwege een beperking, kunt u mogelijk een OV-Begeleiderskaart aanvragen, waarmee 1 begeleider gratis met u mee kan reizen.",
+        "references": [
+            {
+                "label": "Informatie over de OV-begeleiderskaart",
+                "link": "https://www.rijksoverheid.nl/wetten-en-regelingen/productbeschrijvingen/ov-begeleiderskaart"
+            }
+        ]
+    },
+    {
+        "name": "Meerijden",
+        "image": "/assets/icons/Auto.png",
+        "description": "Als u niet meer zelf mag rijden, is meerijden met iemand anders een logische optie. Laat uw familie, vrienden en kennissen weten dat u niet meer mag rijden, zodat ze u kunnen vragen om mee te rijden.",
+        "references": []
+    },
+    {
+        "name": "Taxi",
+        "image": "/assets/icons/Taxi.png",
+        "description": "Er zijn verschillende soorten taxi's beschikbaar. Voor korte afstanden zijn er lokale of regionale vervoerssystemen en betaalbare alternatieven zoals de BoodschappenPlusBus van het Nationaal Ouderenfonds of het ANWB AutoMaatje, dat door vrijwilligers wordt georganiseerd. Voor langere afstanden biedt Valys mogelijkheden. Mogelijk komt u in aanmerking voor een Wmo-taxipas, waarmee u met korting kunt reizen. Informeer hiervoor bij uw gemeente.",
+        "references": [
+            {
+                "label": "Meer over ANWB AutoMaatje",
+                "link": "https://www.anwb.nl/lidmaatschap/maatschappelijk/mobiliteit/automaatje"
+            },
+            {
+                "label": "Meer over BoodschappenPlusBus",
+                "link": "https://ouderenfonds.nl/activiteit/bus/"
+            },
+            {
+                "label": "Meer over Valys",
+                "link": "https://valys.nl/"
+            },
+            {
+                "label": "Meer over Wmo-taxipas",
+                "link": "https://www.zorgwijzer.nl/faq/wmo-vervoer"
+            }
+        ]
+    }
+]
