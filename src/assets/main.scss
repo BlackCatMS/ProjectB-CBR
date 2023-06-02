@@ -1,20 +1,28 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  @font-face {
+    font-family: 'Scala Sans Pro';
+    src: url(fonts/ScalaSansPro-Regular.otf) format('opentype');
+  }
 
-  color-scheme: light dark;
-  color: #1B1C1E;
-  background-color: #ffffff;
+  @font-face {
+    font-family: 'Scala Sans Pro';
+    font-weight: bold;
+    src: url(fonts/ScalaSansPro-Bold.otf) format('opentype');
+  }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  // primary colors
+  --color-blue-main: #0588F0;
+  --color-orange-main: #FF8200;
+  --color-blue-secondary: #003DA5;
+  --color-black: #333F48;
 
-  --color-blue: #0588F0;
-  --color-orange: #FF6200;
+  // accent colors
+  --color-blue-background: #B9D9EB;
+  --color-green: #009A44;
+  --color-yellow: #F2A900;
+  --color-red: #DA291C;
+
+  --border-radius-value: 15px;
 }
 
 /*
@@ -41,8 +49,15 @@ html, body {
   5. Improve text rendering
 */
 body {
+  font-family: Scala Sans Pro;
   line-height: 1.5;
+  color: var(--color-black);
   -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
 }
 /*
   6. Improve media defaults
@@ -68,4 +83,8 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+#app > *:not(.navbar, .footer) {
+  min-height: calc(100vh - 95px);
 }

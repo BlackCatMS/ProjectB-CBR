@@ -35,7 +35,8 @@ const checkbox: Ref<HTMLInputElement | null> = ref(null);
     height: 1.2em;
     width: 1.2em;
     font-size: 1em;
-    background: var(--cbr-blue-2);
+    background: var(--color-blue-secondary);
+    margin: 3px 3px 3px 4px;
   }
 
   label {

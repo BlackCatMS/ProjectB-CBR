@@ -21,7 +21,7 @@ defineProps<{
     font-size: 1em;
     border: none;
     border-radius: 8px;
-    background: var(--cbr-blue-2);
+    background: var(--color-blue-secondary);
     cursor: pointer;
     user-select: none;
     color:white;

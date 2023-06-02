@@ -11,7 +11,7 @@ const checked = ref(false);
 
 <template>
   <main>
-    <CustomTextInput id="test" v-model="textInput" :errored="textInputErrored">Test</CustomTextInput><br>
+    <CustomTextInput id="test" v-model="textInput" :errored="textInputErrored">Invoerveld</CustomTextInput><br>
     <CustomButton @click="textInputErrored = !textInputErrored">Verzenden</CustomButton><br>
     <CustomCheckbox id="check" v-model="checked">Ik ga akkoord</CustomCheckbox>
     <h1>Values</h1>
@@ -22,7 +22,15 @@ const checked = ref(false);
 </template>
 
 <style lang="scss">
- main > * {
-  margin-bottom: 15px;
- }
+  main {
+    margin-top: 3em;
+  }
+
+  main > * {
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    margin-top: 100px;
+  }
 </style>

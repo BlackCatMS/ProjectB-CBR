@@ -48,7 +48,7 @@ label {
   position: absolute;
   color: gray;
   pointer-events: none;
-  top: 7px;
+  top: 6px;
   left: 13px;
   z-index: 1;
   transition: all 0.08s;
@@ -61,7 +61,7 @@ input {
   height: 2.5em;
   padding: 0 16px;
   font-size: 1em;
-  border: 2px solid var(--cbr-blue-2);
+  border: 2px solid var(--color-blue-secondary);
   outline: none;
   border-radius: 8px;
 }
@@ -71,7 +71,7 @@ input::placeholder {
 }
 
 input:focus ~ label, input:not(:placeholder-shown) ~ label {
-  top: -10px;
+  top: -12px;
   font-size: 0.8em;
 }
 </style>
