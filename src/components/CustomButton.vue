@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <div class="button-container">
-    <button :name="name" v-bind="$attrs"><slot /></button>
+    <button :name="name"><slot /></button>
   </div>
 </template>
 
@@ -21,8 +21,9 @@ defineProps<{
     font-size: 1em;
     border: none;
     border-radius: 8px;
-    background: var(--cbr-blue);
+    background: var(--cbr-blue-2);
     cursor: pointer;
     user-select: none;
+    color:white;
   }
 </style>

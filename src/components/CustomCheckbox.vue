@@ -1,28 +1,28 @@
 <script setup lang="ts">
 import { Ref, ref } from 'vue';
 
-const props = defineProps<{
+defineProps<{
   modelValue: boolean,
-  name: string,
+  id: string,
   errored?: boolean,
 }>();
-defineEmits(['update:modelValue']);
+defineEmits<{
+  (event: 'update:modelValue', checkboxState: boolean): void;
+}>();
 
 const checkbox: Ref<HTMLInputElement | null> = ref(null);
-const con = window.console;
 </script>
 
 <template>
   <div class="checkbox-container">
     <input
       ref="checkbox"
-      :name="name"
+      :id="id"
       type="checkbox"
       :checked="modelValue"
-      @click="$emit('update:modelValue', checkbox!.checked);"
-      v-bind="$attrs"
+      @click="$emit('update:modelValue', checkbox!.checked)"
     >
-    <label :for="name"><slot /></label>
+    <label :for="id"><slot /></label>
   </div>
 </template>
 
@@ -35,7 +35,7 @@ const con = window.console;
     height: 1.2em;
     width: 1.2em;
     font-size: 1em;
-    background: var(--cbr-blue);
+    background: var(--cbr-blue-2);
   }
 
   label {

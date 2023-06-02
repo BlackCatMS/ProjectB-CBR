@@ -1,25 +1,30 @@
 <script setup lang="ts">
-type TextInputType = 'email' | 'number' | 'password' | 'search' | 'tel' | 'text' | 'url';
+import { Ref, ref } from 'vue';
 
-const props = defineProps<{
+defineProps<{
   modelValue: string,
-  name: string,
-  type?: TextInputType,
+  id: string,
+  type?: 'email' | 'number' | 'password' | 'search' | 'tel' | 'text' | 'url',
   errored?: boolean,
 }>();
-defineEmits(['update:modelValue']);
+defineEmits<{
+  (event: 'update:modelValue', inputValue: string): void;
+}>();
+
+const input: Ref<HTMLInputElement | null> = ref(null);
 </script>
 
 <template>
   <div class="input-container" :class="{ errored }">
     <input
-      :name="name"
+      ref="input"
+      :id="id"
       :type="type ?? 'text'"
       :value="modelValue"
-      @input="$emit('update:modelValue', modelValue)"
-      v-bind="$attrs"
+      @input="$emit('update:modelValue', input!.value)"
+      placeholder="a"
     />
-    <label :for="name"><slot /></label>
+    <label :for="id"><slot /></label>
   </div>
 </template>
 
@@ -28,8 +33,9 @@ defineEmits(['update:modelValue']);
   display: inline-block;
 }
 
-.input-container.error input {
-  border: 3px solid red;
+.input-container.errored input {
+  border: 2px solid red;
+  outline: 2px solid red;
 }
 
 div {
@@ -42,8 +48,8 @@ label {
   position: absolute;
   color: gray;
   pointer-events: none;
-  top: 10px;
-  left: 15px;
+  top: 7px;
+  left: 13px;
   z-index: 1;
   transition: all 0.08s;
   background: white;
@@ -55,7 +61,7 @@ input {
   height: 2.5em;
   padding: 0 16px;
   font-size: 1em;
-  border: 2px solid var(--cbr-blue);
+  border: 2px solid var(--cbr-blue-2);
   outline: none;
   border-radius: 8px;
 }
