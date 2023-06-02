@@ -2,6 +2,8 @@
 
 import InfoCard from '@/components/InfoCard.vue';
 
+import alternatives from '@/data/alternatives.json';
+
 </script>
 
 <template>
@@ -9,19 +11,14 @@ import InfoCard from '@/components/InfoCard.vue';
 
         <h1>Alternatieve vervoersmiddelen</h1>
 
-        <div class="infocards-container">
+        <div id="infocards-container" class="infocards-container">
 
-            <InfoCard></InfoCard>
-            <InfoCard></InfoCard>
-            <InfoCard></InfoCard>
-            <InfoCard></InfoCard>
-            <InfoCard></InfoCard>
-            <InfoCard></InfoCard>
-            <InfoCard></InfoCard>
-            <InfoCard></InfoCard>
-            <InfoCard></InfoCard>
-            <InfoCard></InfoCard>
-            <InfoCard></InfoCard>
+            <InfoCard v-for="alternative in alternatives" 
+                :name="alternative.name" 
+                :image="alternative.image">
+
+                {{ alternative.description }}
+            </InfoCard>
 
         </div>
 
