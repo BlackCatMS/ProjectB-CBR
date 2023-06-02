@@ -1,5 +1,7 @@
 <script setup lang="ts">
-// hier imports zetten
+
+import CustomButton from '@/components/CustomButton.vue';
+
 </script>
 
 <template>
@@ -22,7 +24,7 @@
             </div>
 
             <RouterLink to="/alternatives">
-                <button>Doorgaan</button>
+                <CustomButton>Doorgaan</CustomButton>
             </RouterLink>
 
         </div>
@@ -33,8 +35,8 @@
 
             <p>Vul dan de enquête in voor een gerichter advies</p>
 
-            <RouterLink to="/faq">
-                <button>Vul in</button>
+            <RouterLink to="/enquete">
+                <CustomButton>Vul in</CustomButton>
             </RouterLink>
 
         </div>
