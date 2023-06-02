@@ -15,7 +15,7 @@ const checked = ref(false);
     <CustomButton @click="textInputErrored = !textInputErrored">Verzenden</CustomButton><br>
     <CustomCheckbox id="check" v-model="checked">Ik ga akkoord</CustomCheckbox>
     <h1>Values</h1>
-    <dt>Text input</dt><dd>{{ textInput === '' ? '&nbsp;' : textInput }}</dd>
+    <dt>Text input</dt><dd>{{ textInput + '&nbsp;' }}</dd>
     <dt>Text input errored</dt><dd>{{ textInputErrored }}</dd>
     <dt>Checkbox</dt><dd>{{ checked }}</dd>
   </main>

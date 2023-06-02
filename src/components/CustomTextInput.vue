@@ -22,6 +22,7 @@ const input: Ref<HTMLInputElement | null> = ref(null);
       :type="type ?? 'text'"
       :value="modelValue"
       @input="$emit('update:modelValue', input!.value)"
+      placeholder="&nbsp;"
     />
     <label :for="id"><slot /></label>
   </div>
