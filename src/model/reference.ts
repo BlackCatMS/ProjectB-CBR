@@ -1,4 +1,4 @@
-export default class Links {
+export default class Reference {
     label: string;
     link: string;
 
