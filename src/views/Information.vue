@@ -25,7 +25,7 @@ if (alternative === undefined) {
         <div class="information-body">
 
             <p>
-                {{ alternative.content }}
+                {{ alternative.description }}
             </p>
 
             <ul> 
