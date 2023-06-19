@@ -120,12 +120,13 @@ if (alternative === undefined) {
         padding: 0;
         text-align: center;
 
-        font-size: 16px;
+        font-size: 18px;
 
         @media (max-width: 420px) {
             flex-direction: column;
             gap: 0.25rem;
             list-style: none;
+            font-size: 16px;
         }
     }
 
