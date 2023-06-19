@@ -1,12 +1,13 @@
 <script setup lang="ts">
 defineProps<{
   name?: string,
+  disabled?: boolean,
 }>();
 </script>
 
 <template>
   <div class="button-container">
-    <button :name="name"><slot /></button>
+    <button :name="name" :disabled="disabled"><slot /></button>
   </div>
 </template>
 
@@ -25,5 +26,10 @@ defineProps<{
     cursor: pointer;
     user-select: none;
     color:white;
+  }
+
+  button:disabled {
+    background: #8b8b8b;
+    cursor: not-allowed;
   }
 </style>
