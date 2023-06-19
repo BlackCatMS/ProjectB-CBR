@@ -3,11 +3,7 @@ import CustomButton from '@/components/CustomButton.vue';
 import CustomRadioInput from '@/components/CustomRadioInput.vue';
 import { ref } from 'vue';
 
-const questions = [
-  {question: "Car go?", answers: ['moo', 'woof', 'vroom', 'meow']},
-  {question: "Plane go?", answers: ['zeem', 'zaam', 'ziim', 'zoom']},
-  {question: "Frog go?", answers: ['ribbit', 'honk', 'oink', 'cock-a-doodle-doo']}
-];
+import questions from '@/data/enquete.json';
 let givenAnswers = ref(new Array(questions.length).fill(0));
 let currentQuestion = ref(0);
 
