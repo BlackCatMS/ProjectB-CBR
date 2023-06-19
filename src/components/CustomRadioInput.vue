@@ -5,10 +5,10 @@ import { computed, Ref, ref, watch, WritableComputedOptions } from 'vue';
 const props = defineProps<{
   name: string;
   possibleValues: Array<{
-    value: string;
+    value: string | number;
     label: string;
   }>;
-  modelValue: string;
+  modelValue: string | number;
 }>();
 defineEmits<{
   (event: 'update:modelValue', value: string): void;
@@ -17,7 +17,7 @@ defineEmits<{
 const container: Ref<null | HTMLDivElement> = ref(null);
 watch(
   () => props.modelValue,
-  (newValue: string) => {
+  (newValue: string | number) => {
     if (!newValue) {
       const radioElements = container.value!.querySelectorAll('input').forEach(el => el.checked = false);
       return;
