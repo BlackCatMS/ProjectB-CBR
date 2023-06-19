@@ -48,23 +48,29 @@ if (alternative === undefined) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 0.5rem;
     }
 
     .head-info {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.25rem;
         text-align: center;
-        width: 525px;
+        max-width: 825px;
 
         @media (max-width: 420px) {
-            width: 350px;
+            max-width: 350px;
             padding: 0 2rem;
         }
     }
 
     .head-info h1 {
         color: var(--color-blue-secondary);
+        font-size: 48px;
+
+        @media (max-width: 420px) {
+            font-size: 32px;            
+        }
     }
 
     .head-info p {
@@ -72,33 +78,56 @@ if (alternative === undefined) {
         color: white;
         padding: 0.75rem 1.5rem;
         border-radius: var(--border-radius-value);
+
+        font-size: 24px;
+
+        @media (max-width: 420px) {
+            font-size: 18px;            
+        }
     }
 
     .information-body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 0.25rem;
     }
 
     .information-body p {
-        max-height: 400px;
-        max-width: 700px;
+        max-height: 350px;
+        max-width: 1000px;
         overflow: auto;
 
         padding: 0.5rem 1rem;
         border: 2px solid var(--color-blue-background);
         border-radius: var(--border-radius-value);
 
+        font-size: 20px;
+
         @media (max-width: 420px) {
             max-width: 350px;
+
+            font-size: 16px;            
         }
     }
 
     .information-body ul {
-        list-style: none;
+        display: flex;
+        gap: 3.5rem;
+        list-style: square;
+        color: var(--color-blue-secondary);
+
         padding: 0;
         text-align: center;
+
+        font-size: 18px;
+
+        @media (max-width: 420px) {
+            flex-direction: column;
+            gap: 0.25rem;
+            list-style: none;
+            font-size: 16px;
+        }
     }
 
     .information-body a {
