@@ -45,19 +45,15 @@ if (alternative === undefined) {
 
     .information-container {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        @media (max-width: 811px) {
-            flex-direction: column;
-        }
     }
 
     .head-info {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        padding: 2rem;
         text-align: center;
         width: 525px;
 
@@ -83,12 +79,6 @@ if (alternative === undefined) {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        padding: 2rem;
-
-        @media (max-width: 420px) {
-
-            padding: 0;            
-        }
     }
 
     .information-body p {
