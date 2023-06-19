@@ -20,7 +20,7 @@ defineProps<{
 
         </div>
 
-        <RouterLink class="routerlink" :to="name">
+        <RouterLink class="routerlink" :to="`${name}-information`">
             <button>Meer over {{ name }}</button>
         </RouterLink>
 
