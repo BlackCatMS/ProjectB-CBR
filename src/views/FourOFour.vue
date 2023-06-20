@@ -34,7 +34,7 @@
   .content{
     background-color: var(--color-orange-main);
     padding: 20px;
-    width: 50%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
