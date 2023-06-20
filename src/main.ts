@@ -6,8 +6,10 @@ import Alternatives from '@/views/Alternatives.vue';
 import Enquete from '@/views/Enquete.vue';
 import InputTest from '@/views/InputTest.vue';
 import FourOFour from '@/views/FourOFour.vue';
+import EnqueteResults from './views/EnqueteResults.vue';
 
 import "@/assets/main.scss";
+
 
 const router = createRouter({
   history: createWebHistory(),
@@ -16,6 +18,7 @@ const router = createRouter({
     { name: 'Alternatieven', path: '/alternatives', component: Alternatives },
     { name: 'Enquête', path: '/enquete', component: Enquete },
     { name: 'input test', path: '/inputs', component: InputTest },
+    { name: 'enquete resultaten', path: '/results', component: EnqueteResults },
     { name: 'Pagina niet gevonden', path: '/:pathMath(.*)*', component: FourOFour },
   ]
 });
