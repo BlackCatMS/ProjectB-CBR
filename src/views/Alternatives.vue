@@ -17,7 +17,7 @@ import alternatives from '@/data/alternatives.json';
                 :name="alternative.name" 
                 :image="alternative.image">
 
-                {{ alternative.description }}
+                {{ alternative.description.split(".")[0] }}
             </InfoCard>
 
         </div>

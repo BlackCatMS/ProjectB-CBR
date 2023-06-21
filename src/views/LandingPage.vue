@@ -59,6 +59,11 @@ import CustomButton from '@/components/CustomButton.vue';
         gap: 2.5rem;
 
         padding: 2.5rem;
+
+        @media (max-width: 420px) {
+            
+            padding: 0;
+        }
     }
 
     .alternatives-container {
@@ -69,6 +74,11 @@ import CustomButton from '@/components/CustomButton.vue';
         gap: 0.5rem;
 
         padding: 1rem;
+
+        @media (max-width: 420px) {
+            
+            padding: 0;
+        }
     }
 
     .alternatives-text {
@@ -86,6 +96,12 @@ import CustomButton from '@/components/CustomButton.vue';
         font-size: 18px;
         padding: 1rem;
         text-align: center;
+
+        @media (max-width: 420px) {
+
+            width: 350px;
+            padding: 0;            
+        }
     }
 
     .faq-container {

@@ -3,7 +3,7 @@ import { Ref, ref } from 'vue';
 
 defineProps<{
   modelValue: string,
-  id: string,
+  name: string,
   type?: 'email' | 'number' | 'password' | 'search' | 'tel' | 'text' | 'url',
   errored?: boolean,
 }>();
@@ -18,13 +18,14 @@ const input: Ref<HTMLInputElement | null> = ref(null);
   <div class="input-container" :class="{ errored }">
     <input
       ref="input"
-      :id="id"
+      :id="name"
+      :name="name"
       :type="type ?? 'text'"
       :value="modelValue"
       @input="$emit('update:modelValue', input!.value)"
       placeholder="&nbsp;"
     />
-    <label :for="id"><slot /></label>
+    <label :for="name"><slot /></label>
   </div>
 </template>
 
@@ -63,7 +64,7 @@ input {
   font-size: 1em;
   border: 2px solid var(--color-blue-secondary);
   outline: none;
-  border-radius: 8px;
+  border-radius: var(--border-radius-value);
 }
 
 input::placeholder {
