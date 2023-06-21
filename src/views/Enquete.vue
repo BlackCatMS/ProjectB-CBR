@@ -12,7 +12,7 @@ let currentQuestion = ref(0);
 <template>
   <main>
 
-    <div v-for="(question, index) in enqueteStore.questions" :key="index" :hidden="index !== currentQuestion">
+    <div class="enquete-container" v-for="(question, index) in enqueteStore.questions" :key="index" :hidden="index !== currentQuestion">
 
       <h1>{{ question.question }}</h1>
       <p>{{ question.description }}</p>
@@ -31,13 +31,23 @@ let currentQuestion = ref(0);
   </main>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+}
+
+.enquete-container {
+
+  max-width: 50vw;
+
+  @media (max-width: 420px) {
+
+    max-width: 325px;
+    
+  }
 }
 
 main h1 {
