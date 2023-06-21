@@ -1,49 +1,37 @@
 [
     {
-      "question": "In hoeverre wordt u door uw gezondheidsklachten belemmerd in bewegen?",
-      "options": ["Niet belemmerd", "Licht belemmerd", "Sterk belemmerd"]
-    },
-    {
       "question": "Kunt u uw arm, hand of vingers door een beperking slecht gebruiken?",
-      "description": "Vul ja in als:
-      U weinig kracht heeft in uw arm, hand of vingers.
-      U uw arm, hand of vingers helemaal niet kunt gebruiken (bijvoorbeeld door verlamming).
-      U een arm of hand helemaal of voor een deel mist.
-      U een armprothese heeft",
-      "options": ["Ja", "Nee"]
+      "description": "Vul ja in als: \n U weinig kracht heeft in uw arm, hand of vingers. \n U uw arm, hand of vingers helemaal niet kunt gebruiken (bijvoorbeeld door verlamming). \n U een arm of hand helemaal of voor een deel mist.U een armprothese heeft",
+      "answers": ["Ja", "Nee"]
     },
     {
       "question": "Kunt u uw been of voet door een beperking slecht gebruiken?",
-      "description" : "Vul ja in als:
-      u weinig kracht heeft in een been of voet.
-      u uw been of voet helemaal niet kunt gebruiken (bijvoorbeeld door verlamming).
-      u een voet of been helemaal of voor een deel mist
-      u een been prothese heeft
-      u hulpmiddelen gebruikt bij het lopen, zoals een stok, rollator.",
-      "options": ["Ja", "Nee"]
+      "description" : "Vul ja in als: \n u weinig kracht heeft in een been of voet. \n u uw been of voet helemaal niet kunt gebruiken (bijvoorbeeld door verlamming). \n u een voet of been helemaal of voor een deel mist \n u een been prothese heeft \n u hulpmiddelen gebruikt bij het lopen, zoals een stok, rollator.",
+      "answers": ["Ja", "Nee"]
     },
     {
       "question": "Kunt u met één of beide ogen beperkt zien, zelfs als u een bril of lenzen gebruikt?",
-      "description" : "Ziet u met uw bril of contactlenzen goed? Kies dan 'nee'. 
-      Draagt u uw bril of contact lenzen en ziet u daarmee nog niet goed vul dan ‘Ja’ in. 
-      Met lenzen zijn ook nachtlenzen bedoeld.",
-      "options": ["Ja", "Nee"]
+      "description" : "Ziet u met uw bril of contactlenzen goed? Kies dan 'nee'. \n Draagt u uw bril of contact lenzen en ziet u daarmee nog niet goed vul dan ‘Ja’ in. \n Met lenzen zijn ook nachtlenzen bedoeld.",
+      "answers": ["Ja", "Nee"]
     },
     {
       "question": "Heeft u andere klachten of aandoeningen die u kunnen beperken bij het besturen van een voertuig?",
       "description" : "Deze vraag kunt u bijvoorbeeld met ja beantwoorden u het CBR wilt informeren dat u doof bent of een verstandelijke of lichamelijke beperking heeft.",
-      "options": ["Ja", "Nee"]
+      "answers": ["Ja", "Nee"]
     },
     {
       "question": "Voelt u zich nog comfortabel bij zelf het besturen van een voertuig zoals een fiets, bromfiets of brommobiel",
-      "options": ["Ja", "Nee"]
+      "description" : "",
+      "answers": ["Ja", "Nee"]
     },
     {
       "question": "Denkt u dat een aangepaste fiets, handbike of scootmobiel iets voor u is?",
-      "options": ["Ja", "Nee"]
+      "description" : "",
+      "answers": ["Ja", "Nee"]
     },
     {
       "question": "Voelt u zich comfortabel om zelfstandig te reizen met het OV?",
-      "options": ["Ja", "Nee"]
+      "description" : "",
+      "answers": ["Ja", "Nee"]
     }
 ]
