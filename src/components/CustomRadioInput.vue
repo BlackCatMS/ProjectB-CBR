@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, Ref, ref, watch, WritableComputedOptions } from 'vue';
+import { computed, onMounted, Ref, ref, watch, WritableComputedOptions } from 'vue';
 
 
 const props = defineProps<{
@@ -14,21 +14,25 @@ defineEmits<{
   (event: 'update:modelValue', value: string): void;
 }>();
 
+function setValue(newValue?: string | number) {
+  if (!newValue) {
+    container.value!.querySelectorAll('input').forEach(el => el.checked = false);
+    return;
+  }
+
+  const radioElement: HTMLInputElement | null = container.value!.querySelector(`input[value="${newValue}"]`);
+  if (!radioElement) {
+    throw new Error('Invalid radio input value: ' + newValue);
+  }
+  radioElement.checked = true;
+}
+
+onMounted(() => setValue(props.modelValue));
+
 const container: Ref<null | HTMLDivElement> = ref(null);
 watch(
   () => props.modelValue,
-  (newValue: string | number) => {
-    if (!newValue) {
-      const radioElements = container.value!.querySelectorAll('input').forEach(el => el.checked = false);
-      return;
-    }
-
-    const radioElement: HTMLInputElement | null = container.value!.querySelector(`input[value="${newValue}"]`);
-    if (!radioElement) {
-      throw new Error('Invalid radio input value: ' + newValue);
-    }
-    radioElement.checked = true;
-  }
+  setValue,
 );
 </script>
 
