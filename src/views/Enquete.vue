@@ -53,7 +53,7 @@ main p {
 #buttons-container {
   width: 500px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
