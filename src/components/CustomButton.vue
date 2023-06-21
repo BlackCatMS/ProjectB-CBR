@@ -6,16 +6,10 @@ defineProps<{
 </script>
 
 <template>
-  <div class="button-container">
     <button :name="name" :disabled="disabled"><slot /></button>
-  </div>
 </template>
 
 <style scoped lang="scss">
-  .button-container {
-    display: inline-block;
-  }
-
   button {
     height: 2.5em;
     padding: 0 16px;
