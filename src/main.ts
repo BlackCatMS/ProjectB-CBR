@@ -3,11 +3,14 @@ import { createRouter, createWebHistory } from 'vue-router';
 import App from './App.vue';
 import LandingPage from '@/views/LandingPage.vue';
 import Alternatives from '@/views/Alternatives.vue';
+import Information from '@/views/Information.vue';
+import Enquete from '@/views/Enquete.vue';
+import EnqueteResults from '@/views/EnqueteResults.vue';
 import InputTest from '@/views/InputTest.vue';
 import FourOFour from '@/views/FourOFour.vue';
-import Information from '@/views/Information.vue';
 
 import "@/assets/main.scss";
+
 
 const router = createRouter({
   history: createWebHistory(),
@@ -15,6 +18,8 @@ const router = createRouter({
     { name: '', path: '/', component: LandingPage },
     { name: 'Alternatieven', path: '/alternatives', component: Alternatives },
     { name: 'Alternatief Informatie', path: '/:alternative-information', component: Information},
+    { name: 'Enquête', path: '/enquete', component: Enquete },
+    { name: 'enquete resultaten', path: '/results', component: EnqueteResults },
     { name: 'input test', path: '/inputs', component: InputTest },
     { name: 'Pagina niet gevonden', path: '/:pathMath(.*)*', component: FourOFour },
   ]

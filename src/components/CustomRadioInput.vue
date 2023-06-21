@@ -1,34 +1,38 @@
 <script setup lang="ts">
-import { computed, Ref, ref, watch, WritableComputedOptions } from 'vue';
+import { computed, onMounted, Ref, ref, watch, WritableComputedOptions } from 'vue';
 
 
 const props = defineProps<{
   name: string;
   possibleValues: Array<{
-    value: string;
+    value: string | number;
     label: string;
   }>;
-  modelValue: string;
+  modelValue: string | number;
 }>();
 defineEmits<{
   (event: 'update:modelValue', value: string): void;
 }>();
 
+function setValue(newValue?: string | number) {
+  if (!newValue) {
+    container.value!.querySelectorAll('input').forEach(el => el.checked = false);
+    return;
+  }
+
+  const radioElement: HTMLInputElement | null = container.value!.querySelector(`input[value="${newValue}"]`);
+  if (!radioElement) {
+    throw new Error('Invalid radio input value: ' + newValue);
+  }
+  radioElement.checked = true;
+}
+
+onMounted(() => setValue(props.modelValue));
+
 const container: Ref<null | HTMLDivElement> = ref(null);
 watch(
   () => props.modelValue,
-  (newValue: string) => {
-    if (!newValue) {
-      const radioElements = container.value!.querySelectorAll('input').forEach(el => el.checked = false);
-      return;
-    }
-
-    const radioElement: HTMLInputElement | null = container.value!.querySelector(`input[value="${newValue}"]`);
-    if (!radioElement) {
-      throw new Error('Invalid radio input value: ' + newValue);
-    }
-    radioElement.checked = true;
-  }
+  setValue,
 );
 </script>
 
@@ -42,6 +46,13 @@ watch(
 </template>
 
 <style scoped lang="scss">
+
+.radio-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
 .single-radio-container {
   display: grid;
   grid-template-columns: 1.4em auto;
