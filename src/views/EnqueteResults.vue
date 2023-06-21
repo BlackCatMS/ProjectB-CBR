@@ -44,7 +44,7 @@ if (givenAnswers[6] === 2) {
         :name="alternative.name"
         :image="alternative.image"
       >
-        {{ alternative.description }}
+        {{ alternative.description.split(".")[0] }}
       </InfoCard>
     </div>
   </div>
