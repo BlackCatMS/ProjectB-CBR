@@ -46,6 +46,13 @@ watch(
 </template>
 
 <style scoped lang="scss">
+
+.radio-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
 .single-radio-container {
   display: grid;
   grid-template-columns: 1.4em auto;
