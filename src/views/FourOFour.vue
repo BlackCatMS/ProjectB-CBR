@@ -41,4 +41,9 @@
     border-radius: var(--border-radius-value);
     color: white;
   }
+  @media only screen and (max-width: 768px) {
+    .content{
+      width: 85%;
+    }
+  }
 </style>
