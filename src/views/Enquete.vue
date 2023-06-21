@@ -13,6 +13,7 @@ let currentQuestion = ref(0);
   <main>
     <div v-for="(question, index) in enqueteStore.questions" :key="index" :hidden="index !== currentQuestion">
       <h1>{{ question.question }}</h1>
+      <p>{{ question.description }}</p>
       <CustomRadioInput :name="question.question" :possible-values="question.options.map((option, i) => ({label: option, value: i+1}))" v-model="enqueteStore.answers[index]" />
       <div id="buttons-container">
         <CustomButton :disabled="index === 0" @click="currentQuestion--">Vorige</CustomButton>
