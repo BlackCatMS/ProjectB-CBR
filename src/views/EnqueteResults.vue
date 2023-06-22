@@ -31,7 +31,7 @@ if (givenAnswers[4] === 2 || givenAnswers[5] === 2) {
 }
 if (givenAnswers[6] === 2) {
     // alternativesList remove ov
-    alternativesList = alternativesList.filter(vehicle => vehicle.name !== 'Openbaar vervoer');
+    alternativesList = alternativesList.filter(vehicle => vehicle.name !== 'OV');
 }
 
 </script>
